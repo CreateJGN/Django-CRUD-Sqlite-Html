@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Add member</h1>
-        <form action='update/{{ mymember.id }}' method='post'>
+        <form action='updateRecord/{{ mymember.id }}' method='post'>
             {% csrf_token %}
             First Name: <br>
             <input name="first" value="{{ mymember.firstname}}" />
